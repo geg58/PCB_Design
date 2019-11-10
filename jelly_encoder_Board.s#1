@@ -815,7 +815,7 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/ePH.pdf"&gt; Datashee
 <sheets>
 <sheet>
 <plain>
-<text x="96.52" y="86.36" size="1.778" layer="91">Motor Encoder Connector</text>
+<text x="99.06" y="111.76" size="1.778" layer="91">Motor Encoder Connector</text>
 <text x="12.7" y="91.44" size="1.778" layer="91">Motor Encoder</text>
 <text x="93.98" y="45.72" size="1.778" layer="91">Motor Encoder Programmer</text>
 </plain>
@@ -833,9 +833,9 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/ePH.pdf"&gt; Datashee
 <instance part="SUPPLY6" gate="GND" x="99.06" y="2.54"/>
 <instance part="P+4" gate="VCC" x="0" y="93.98"/>
 <instance part="JP1" gate="A" x="114.3" y="22.86"/>
-<instance part="J2" gate="G$1" x="20.32" y="22.86"/>
-<instance part="P+5" gate="VCC" x="50.8" y="20.32" rot="R270"/>
-<instance part="SUPPLY7" gate="GND" x="7.62" y="25.4" rot="R180"/>
+<instance part="J2" gate="G$1" x="101.6" y="96.52"/>
+<instance part="P+5" gate="VCC" x="132.08" y="93.98" rot="R270"/>
+<instance part="SUPPLY7" gate="GND" x="88.9" y="99.06" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -872,7 +872,8 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/ePH.pdf"&gt; Datashee
 </segment>
 <segment>
 <pinref part="SUPPLY7" gate="GND" pin="GND"/>
-<wire x1="20.32" y1="22.86" x2="7.62" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="96.52" x2="88.9" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -899,7 +900,8 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/ePH.pdf"&gt; Datashee
 </segment>
 <segment>
 <pinref part="P+5" gate="VCC" pin="VCC"/>
-<wire x1="40.64" y1="20.32" x2="48.26" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="93.98" x2="129.54" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="A" class="0">
@@ -914,8 +916,9 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/ePH.pdf"&gt; Datashee
 <label x="93.98" y="71.12" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="20.32" y1="20.32" x2="7.62" y2="20.32" width="0.1524" layer="91"/>
-<label x="7.62" y="20.32" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="101.6" y1="93.98" x2="88.9" y2="93.98" width="0.1524" layer="91"/>
+<label x="88.9" y="93.98" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="B" class="0">
@@ -930,8 +933,9 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/ePH.pdf"&gt; Datashee
 <label x="96.52" y="66.04" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="20.32" y1="17.78" x2="12.7" y2="17.78" width="0.1524" layer="91"/>
-<label x="12.7" y="17.78" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="101.6" y1="91.44" x2="93.98" y2="91.44" width="0.1524" layer="91"/>
+<label x="93.98" y="91.44" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="INC" class="0">
@@ -946,8 +950,9 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/ePH.pdf"&gt; Datashee
 <label x="86.36" y="73.66" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="40.64" y1="22.86" x2="55.88" y2="22.86" width="0.1524" layer="91"/>
-<label x="55.88" y="22.86" size="1.778" layer="95" xref="yes"/>
+<wire x1="121.92" y1="96.52" x2="137.16" y2="96.52" width="0.1524" layer="91"/>
+<label x="137.16" y="96.52" size="1.778" layer="95" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="SCLK" class="0">
