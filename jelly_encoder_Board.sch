@@ -709,6 +709,82 @@ In this library the device names are the same as the pin names of the symbols, t
 </deviceset>
 </devicesets>
 </library>
+<library name="S5B-PH-SM4-TB(LF)(SN)">
+<description>&lt;JST PH Series, 2mm Pitch 5 Way 1 Row Right Angle PCB Header, Solder Termination, 2A&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="S5B-PH-SM4-TB_1">
+<description>&lt;b&gt;S5B-PH-SM4-TB_1&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="8" y="0" dx="3.5" dy="1" layer="1" rot="R90"/>
+<smd name="2" x="6" y="0" dx="3.5" dy="1" layer="1" rot="R90"/>
+<smd name="3" x="4" y="0" dx="3.5" dy="1" layer="1" rot="R90"/>
+<smd name="4" x="2" y="0" dx="3.5" dy="1" layer="1" rot="R90"/>
+<smd name="5" x="0" y="0" dx="3.5" dy="1" layer="1" rot="R90"/>
+<smd name="6" x="-2.4" y="5.7" dx="3.5" dy="1.6" layer="1" rot="R90"/>
+<smd name="7" x="10.4" y="5.7" dx="3.5" dy="1.6" layer="1" rot="R90"/>
+<text x="2.585" y="5.499" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<text x="2.585" y="5.499" size="1.27" layer="25" align="center">&gt;NAME</text>
+<wire x1="-3" y1="-0.25" x2="11" y2="-0.25" width="0.2" layer="51"/>
+<wire x1="11" y1="-0.25" x2="11" y2="7.35" width="0.2" layer="51"/>
+<wire x1="11" y1="7.35" x2="-3" y2="7.35" width="0.2" layer="51"/>
+<wire x1="-3" y1="7.35" x2="-3" y2="-0.25" width="0.2" layer="51"/>
+<circle x="11.671" y="-1.778" radius="0.237190625" width="0.4" layer="25"/>
+<wire x1="-1.377" y1="7.35" x2="9.381" y2="7.35" width="0.2" layer="21"/>
+<wire x1="-3" y1="-0.25" x2="-3" y2="3.55" width="0.2" layer="21"/>
+<wire x1="11" y1="-0.25" x2="11" y2="3.55" width="0.2" layer="21"/>
+<wire x1="11" y1="-0.25" x2="8.701" y2="-0.25" width="0.2" layer="21"/>
+<wire x1="-3" y1="-0.25" x2="-0.783" y2="-0.25" width="0.2" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="S5B-PH-SM4-TB(LF)(SN)">
+<wire x1="5.08" y1="2.54" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-7.62" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<text x="16.51" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="16.51" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="1" x="0" y="0" length="middle"/>
+<pin name="3" x="0" y="-2.54" length="middle"/>
+<pin name="5" x="0" y="-5.08" length="middle"/>
+<pin name="2" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="4" x="20.32" y="-2.54" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="S5B-PH-SM4-TB(LF)(SN)" prefix="J">
+<description>&lt;b&gt;JST PH Series, 2mm Pitch 5 Way 1 Row Right Angle PCB Header, Solder Termination, 2A&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/ePH.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="S5B-PH-SM4-TB(LF)(SN)" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="S5B-PH-SM4-TB_1">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="JST PH Series, 2mm Pitch 5 Way 1 Row Right Angle PCB Header, Solder Termination, 2A" constant="no"/>
+<attribute name="HEIGHT" value="mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="JST (JAPAN SOLDERLESS TERMINALS)" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="S5B-PH-SM4-TB(LF)(SN)" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="" constant="no"/>
+<attribute name="RS_PART_NUMBER" value="" constant="no"/>
+<attribute name="RS_PRICE-STOCK" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -732,11 +808,14 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X11" device="/90" package3d_urn="urn:adsk.eagle:package:22416/2"/>
+<part name="J2" library="S5B-PH-SM4-TB(LF)(SN)" deviceset="S5B-PH-SM4-TB(LF)(SN)" device=""/>
+<part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="SUPPLY7" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="96.52" y="86.36" size="1.778" layer="91">Motor Encoder Connector</text>
+<text x="99.06" y="111.76" size="1.778" layer="91">Motor Encoder Connector</text>
 <text x="12.7" y="91.44" size="1.778" layer="91">Motor Encoder</text>
 <text x="93.98" y="45.72" size="1.778" layer="91">Motor Encoder Programmer</text>
 </plain>
@@ -754,6 +833,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="SUPPLY6" gate="GND" x="99.06" y="2.54"/>
 <instance part="P+4" gate="VCC" x="0" y="93.98"/>
 <instance part="JP1" gate="A" x="114.3" y="22.86"/>
+<instance part="J2" gate="G$1" x="101.6" y="96.52"/>
+<instance part="P+5" gate="VCC" x="132.08" y="93.98" rot="R270"/>
+<instance part="SUPPLY7" gate="GND" x="88.9" y="99.06" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -788,6 +870,11 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
 <wire x1="101.6" y1="76.2" x2="93.98" y2="76.2" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="SUPPLY7" gate="GND" pin="GND"/>
+<wire x1="101.6" y1="96.52" x2="88.9" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="1"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -811,6 +898,11 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="P+2" gate="VCC" pin="VCC"/>
 <wire x1="101.6" y1="68.58" x2="86.36" y2="68.58" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="P+5" gate="VCC" pin="VCC"/>
+<wire x1="121.92" y1="93.98" x2="129.54" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="4"/>
+</segment>
 </net>
 <net name="A" class="0">
 <segment>
@@ -822,6 +914,11 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="J1" gate="G$1" pin="3"/>
 <wire x1="101.6" y1="71.12" x2="93.98" y2="71.12" width="0.1524" layer="91"/>
 <label x="93.98" y="71.12" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="101.6" y1="93.98" x2="88.9" y2="93.98" width="0.1524" layer="91"/>
+<label x="88.9" y="93.98" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="B" class="0">
@@ -835,6 +932,11 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="101.6" y1="66.04" x2="96.52" y2="66.04" width="0.1524" layer="91"/>
 <label x="96.52" y="66.04" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<wire x1="101.6" y1="91.44" x2="93.98" y2="91.44" width="0.1524" layer="91"/>
+<label x="93.98" y="91.44" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="5"/>
+</segment>
 </net>
 <net name="INC" class="0">
 <segment>
@@ -846,6 +948,11 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="J1" gate="G$1" pin="2"/>
 <wire x1="101.6" y1="73.66" x2="86.36" y2="73.66" width="0.1524" layer="91"/>
 <label x="86.36" y="73.66" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="121.92" y1="96.52" x2="137.16" y2="96.52" width="0.1524" layer="91"/>
+<label x="137.16" y="96.52" size="1.778" layer="95" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="SCLK" class="0">
