@@ -3,4 +3,4 @@ PCB Schematics
 
 
 
-![jelly_encoder_Board](/Users/travisbrashaers/Documents/eagle/JElly/img/jelly_encoder_Board.png)
+![jelly_encoder_Board](/img/jelly_encoder_Board.png)
