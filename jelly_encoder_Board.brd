@@ -679,7 +679,7 @@ design rules under a new name.</description>
 <attribute name="RS_PART_NUMBER" value="" x="25.490603125" y="-10.782840625" size="1.778" layer="27" rot="R238" display="off"/>
 <attribute name="RS_PRICE-STOCK" value="" x="25.490603125" y="-10.782840625" size="1.778" layer="27" rot="R238" display="off"/>
 </element>
-<element name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X07/90" package3d_urn="urn:adsk.eagle:package:22476/2" value="" x="35.175765625" y="0.526940625" rot="R270"/>
+<element name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X07/90" package3d_urn="urn:adsk.eagle:package:22476/2" value="" x="36.97956875" y="0.2688875" rot="R270"/>
 </elements>
 <signals>
 <signal name="GND">
