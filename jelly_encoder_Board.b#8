@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.000123031496" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.000123031496" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -23,7 +23,7 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -474,6 +474,11 @@ design rules under a new name.</description>
 <vertex x="25.4" y="25.4" curve="197.492324"/>
 <vertex x="-16.51" y="-31.75" curve="162.507676"/>
 </polygon>
+<contactref element="J1" pad="5"/>
+<contactref element="IC1" pad="4"/>
+<contactref element="IC1" pad="17"/>
+<wire x1="-11.2522" y1="0" x2="-11.5022" y2="-2.45" width="0" layer="19" extent="1-1"/>
+<wire x1="-11.5022" y1="2.45" x2="-11.2522" y2="0" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC">
 <contactref element="IC1" pad="14"/>
@@ -481,18 +486,26 @@ design rules under a new name.</description>
 <vertex x="25.4" y="25.4" curve="197.492324"/>
 <vertex x="-16.51" y="-31.75" curve="162.507676"/>
 </polygon>
+<contactref element="J1" pad="2"/>
+<wire x1="-12.065" y1="3.175" x2="-12.065" y2="2.54" width="0.1524" layer="1"/>
+<wire x1="-12.7" y1="3.81" x2="-12.065" y2="3.175" width="0.1524" layer="1"/>
+<wire x1="-24.765" y1="3.81" x2="-12.7" y2="3.81" width="0.1524" layer="1"/>
+<wire x1="-24.765" y1="-15.24" x2="-24.765" y2="3.81" width="0.1524" layer="1"/>
+<wire x1="-25.4" y1="-15.875" x2="-24.765" y2="-15.24" width="0.1524" layer="1"/>
+<wire x1="-12.065" y1="2.54" x2="-12.0022" y2="2.45" width="0.1524" layer="1"/>
+<wire x1="-25.4" y1="-15.875" x2="-25.729896875" y2="-16.373153125" width="0.1524" layer="1"/>
 </signal>
-<signal name="PA1">
-<contactref element="IC1" pad="11"/>
+<signal name="A">
+<contactref element="IC1" pad="5"/>
+<contactref element="J1" pad="3"/>
 </signal>
-<signal name="PA2">
-<contactref element="IC1" pad="10"/>
+<signal name="B">
+<contactref element="IC1" pad="6"/>
+<contactref element="J1" pad="1"/>
 </signal>
-<signal name="PA3">
-<contactref element="IC1" pad="9"/>
-</signal>
-<signal name="PA0">
-<contactref element="IC1" pad="12"/>
+<signal name="INC">
+<contactref element="IC1" pad="7"/>
+<contactref element="J1" pad="4"/>
 </signal>
 </signals>
 </board>
